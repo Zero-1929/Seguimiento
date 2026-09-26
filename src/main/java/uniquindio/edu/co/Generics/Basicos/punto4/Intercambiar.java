@@ -2,6 +2,7 @@ package uniquindio.edu.co.Generics.Basicos.punto4;
 
 public class Intercambiar {
 
+    // Intercambia de posición dos elementos de un arreglo.
     public static <T> void intercambiar(T[] arreglo, int posicion1, int posicion2) {
 
         T temporal = arreglo[posicion1];

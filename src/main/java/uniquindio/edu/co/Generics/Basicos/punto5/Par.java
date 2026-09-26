@@ -5,11 +5,13 @@ public class Par<T> {
     private T valor1;
     private T valor2;
 
+
     public Par(T valor1, T valor2) {
         this.valor1 = valor1;
         this.valor2 = valor2;
     }
 
+    // Comprueba si los dos valores almacenados son iguales.
     public boolean sonIguales() {
         return valor1.equals(valor2);
     }

@@ -12,11 +12,15 @@ public class ListaTareas<T extends Comparable<T>>
         lista = new ArrayList<>();
     }
 
+
+    // Agrega un elemento a la lista.
     public void agregar(T elemento) {
         lista.add(elemento);
     }
 
 
+
+    // Devuelve un iterador que recorre la lista normalmente.
     @Override
     public Iterator<T> iterator() {
 
@@ -24,6 +28,8 @@ public class ListaTareas<T extends Comparable<T>>
     }
 
 
+
+    // Devuelve un iterador que recorre la lista de atrás hacia adelante.
     public Iterator<T> iteratorInverso() {
 
         return new IteratorInverso();
@@ -39,6 +45,8 @@ public class ListaTareas<T extends Comparable<T>>
         }
 
 
+
+        // Indica si quedan elementos por recorrer.
         @Override
         public boolean hasNext() {
 
@@ -46,6 +54,8 @@ public class ListaTareas<T extends Comparable<T>>
         }
 
 
+
+        // Devuelve el siguiente elemento recorriendo hacia atrás.
         @Override
         public T next() {
 
@@ -58,6 +68,8 @@ public class ListaTareas<T extends Comparable<T>>
     }
 
 
+
+    // Devuelve los elementos que están dentro del rango indicado.
     public ArrayList<T> entre(T min, T max) {
 
         ArrayList<T> resultado = new ArrayList<>();

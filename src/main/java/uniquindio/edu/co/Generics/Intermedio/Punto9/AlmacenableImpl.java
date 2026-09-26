@@ -4,8 +4,11 @@ import java.util.ArrayList;
 
 interface Almacenable<T extends Comparable<T>> {
 
+    // Guarda un elemento.
     void guardar(T item);
 
+
+    // Devuelve el elemento más grande almacenado.
     T maximo();
 }
 
@@ -18,11 +21,15 @@ public class AlmacenableImpl<T extends Comparable<T>>
         elementos = new ArrayList<>();
     }
 
+
+    // Agrega un elemento a la lista.
     @Override
     public void guardar(T item) {
         elementos.add(item);
     }
 
+
+    // Busca y devuelve el elemento mayor de la lista.
     @Override
     public T maximo() {
 

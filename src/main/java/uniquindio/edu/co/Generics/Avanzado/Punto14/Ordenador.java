@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Ordenador<T extends Comparable<T>> {
 
+
+    // Ordena la lista de menor a mayor.
     public void ordenar(List<T> lista) {
 
         for (int i = 0; i < lista.size() - 1; i++) {

@@ -8,6 +8,7 @@ public class CajaNumerica<T extends Number> {
         this.numero = numero;
     }
 
+    // Devuelve el doble del número almacenado.
     public double doble() {
         return numero.doubleValue() * 2;
     }

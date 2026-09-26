@@ -14,11 +14,14 @@ public class PilaGenerica<T> {
         pila = new LinkedList<>();
     }
 
+
+    // Agrega un elemento a la pila.
     public void agregar(T elemento) {
         pila.add(elemento);
     }
 
 
+    // Devuelve los elementos que cumplen la condición hasta alcanzar el máximo indicado.
     public List<T> extraerSi(Predicate<T> p, int max) {
 
         List<T> resultado = new ArrayList<>();

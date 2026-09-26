@@ -2,6 +2,8 @@ package uniquindio.edu.co.Generics.Intermedio.Punto8;
 
 public class Comparador<T extends Comparable<T>> {
 
+
+    // Devuelve el mayor de los dos valores recibidos.
     public T mayor(T a, T b) {
 
         if (a.compareTo(b) > 0) {

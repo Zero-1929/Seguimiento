@@ -5,14 +5,20 @@ import java.util.List;
 
 interface Servicio<T extends Number & Comparable<T>> {
 
+
+    // Devuelve el menor elemento de una lista.
     T minimo(List<T> lista);
 
+
+    // Devuelve el mayor elemento de una lista.
     T maximo(List<T> lista);
 }
 
 public class ServicioNumerico<T extends Number & Comparable<T>>
         implements Servicio<T> {
 
+
+    // Busca y devuelve el menor elemento de la lista.
     @Override
     public T minimo(List<T> lista) {
 
@@ -28,6 +34,8 @@ public class ServicioNumerico<T extends Number & Comparable<T>>
         return menor;
     }
 
+
+    // Busca y devuelve el mayor elemento de la lista.
     @Override
     public T maximo(List<T> lista) {
 

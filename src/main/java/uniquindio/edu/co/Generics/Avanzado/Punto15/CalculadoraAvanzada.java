@@ -2,14 +2,20 @@ package uniquindio.edu.co.Generics.Avanzado.Punto15;
 
 public class CalculadoraAvanzada<T extends Number & Comparable<T>> {
 
+
+    // Suma dos valores y devuelve el resultado como double.
     public double sumar(T a, T b) {
         return a.doubleValue() + b.doubleValue();
     }
 
+
+    // Resta el segundo valor al primero.
     public double restar(T a, T b) {
         return a.doubleValue() - b.doubleValue();
     }
 
+
+    // Devuelve el mayor de los dos valores.
     public T maximo(T a, T b) {
 
         if (a.compareTo(b) > 0) {
@@ -19,6 +25,8 @@ public class CalculadoraAvanzada<T extends Number & Comparable<T>> {
         return b;
     }
 
+
+    // Devuelve el menor de los dos valores.
     public T minimo(T a, T b) {
 
         if (a.compareTo(b) < 0) {
